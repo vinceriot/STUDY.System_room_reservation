@@ -1,0 +1,2 @@
+DispatcherServerIP=192.168.143.175
+DispatcherServerPort=12347

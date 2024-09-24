@@ -1,0 +1,8 @@
+IP=192.168.143.175
+Port=12347
+ReservationServerCount=1
+SeatManagementServerCount=1
+ReservationServerIP1=192.168.143.175
+ReservationServerPort1=12350
+SeatManagementServerIP1=192.168.143.175
+SeatManagementServerPort1=12353

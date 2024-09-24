@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package reservation;
+
+// Сервис бронирования
+service ReservationService {
+rpc Ping (PingRequest) returns (PingResponse);
+rpc ReserveSeat (ReservationRequest) returns (ReservationResponse);
+rpc GetSeatStatus (SeatListRequest) returns (stream SeatStatus);
+rpc UpdateStatus (ReservationRequest) returns (ReservationResponse);
+}
+
+// Запрос проверки соединения
+message PingRequest {}
+// Ответ на проверку соединения
+message PingResponse {}
+//Запрос бронирования
+message ReservationRequest {
+  string customer_name = 1;
+  int32 seat_number = 2;
+}
+//Ответ на запрос бронирования
+message ReservationResponse {
+  bool success = 1;
+  string message = 2;
+}
+//Запрос на просмотр всех мест
+message SeatListRequest {}
+//Ответ на запрос просмотра
+message SeatStatus {
+  int32 seat_number = 1;
+  string status = 2;
+}

@@ -1,0 +1,7 @@
+IP=192.168.143.175
+Port=12350
+SeatManagementServerCount=2
+SeatManagementServerIP1=192.168.143.175
+SeatManagementServerPort1=12353
+SeatManagementServerIP2=192.168.143.175
+SeatManagementServerPort2=12354
